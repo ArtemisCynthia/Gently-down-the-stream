@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="dial">
+    <view>
+      本周学习时长
+    </view>
+    <text>
+      {{wh}}:{{wm}}:{{ws}}
+    </text>
+  </view>
+  <view>
+    <view class="title">
+      本次学习时长
+    </view>
+    <text class="title">
+      {{h}}:{{m}}:{{s}}
+    </text>
+  </view>
+  <view class="buttons">
+    <view class="start">
+      <button class="{{startbutton.class}}" size="default" type="primary" onTap="{{startbutton.ontap}}">{{startbutton.text}}</button>
+    </view>
+    <view class="stop">
+      <button class="{{stopbutton.class}}" size="default" type="primary" onTap="{{stopbutton.ontap}}">{{stopbutton.text}}</button>
+    </view>
+  </view>
+</view>

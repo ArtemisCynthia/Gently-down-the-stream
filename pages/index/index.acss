@@ -1,0 +1,36 @@
+.input {
+  height: 80rpx;
+  width: 500rpx;
+  border-radius: 30rpx;
+  border: 2rpx solid #CCCCCC;
+  margin: 0rpx 0 60rpx 0;
+  text-align: left;
+}
+.button {
+  display: flex;
+  height: 70rpx;
+  width: 100rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  align-items: center;
+  justify-content: center;
+}
+.button-con{
+  margin-top:30rpx;
+  width: 400rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.all-con{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 50rpx;
+  margin: 300rpx 0 100rpx 0;
+}
+page {
+  background-color: #6c5eea;
+}

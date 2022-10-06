@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="page-title">
+    用户注册
+  </view>
+  <view class="page-form">
+    <form onSubmit="onSubmit" onReset="onReset">
+      <view>
+        <input class="input" name="username" placeholder="用户名" onFocus="onfocus"/>
+      </view>
+
+      <view>
+        <input class="input" name="password" password placeholder="密码" />
+      </view>
+
+      <view>
+        <button class="button" size="mini" type="primary" form-type="submit">提交</button>
+      </view>
+    </form>
+  </view>
+</view>

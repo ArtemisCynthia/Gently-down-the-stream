@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "开卷",
+  "usingComponents": {
+    "avatar": "antd-mini/es/Avatar/index",
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "tabs": "antd-mini/es/Tabs/index",
+    "tab-content": "antd-mini/es/Tabs/TabItem/index",
+    "icon": "antd-mini/es/Icon/index"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@antv/my-f2": "^2.1.7",
+    "@qiun/my-ucharts": "^2.4.3-20220505",
+    "antd-mini": "^0.0.22",
+    "echarts": "^5.4.0"
+  },
+  "name": "blank",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
