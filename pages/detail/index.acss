@@ -1,0 +1,84 @@
+/**index.wxss**/
+
+ec-canvas {
+    width: 100%;
+    height: 50%;
+}
+.item-all{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height:200rpx ;
+  background-color: white;
+}
+.item-left{
+  display: flex;
+  height: 170rpx;
+  width: 170rpx;
+  margin-left: 41rpx;
+  margin-right: 18rpx;
+  justify-content: center;
+  align-items: center;
+}
+.item-right{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50rpx;
+  height: 170rpx;
+  width: 170rpx;
+}
+
+.amd-avatar-src{
+  display: block;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.item-name{
+  margin-top: 11rpx;
+  color: red;
+  font-size: 40rpx;
+  text-align: left;
+ 
+}
+.item-img{
+  height: 35rpx;
+  width: 35rpx;
+  margin-right: 30rpx;
+}
+.item-text{
+  font-size: 25rpx;
+}
+.item-right-text-con{
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.line-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  width: 100%;
+  border-top: 1rpx solid black;
+}
+.detail-page-con{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.detail-container{
+  display: flex;
+  width: 100%;
+  height: 700rpx;
+  justify-content: center;
+  align-items: center;
+}
+.f2-chart { 
+  width: 100%;
+  height: 500rpx;
+}

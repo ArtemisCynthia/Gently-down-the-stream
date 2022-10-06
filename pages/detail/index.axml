@@ -1,0 +1,33 @@
+<view class="item-all">
+  <view class="item-left">
+  <image src="../../assets/head.png" class="amd-avatar-src"/>
+</view>
+<view class="item-right">
+  <text class="item-name">{{username}}</text>
+  <view class="item-right-text-con">
+    <image class="item-img" a:if="{{idx === 0}}" src="../../assets/jiangzhangxunzhang.svg" />
+    <image class="item-img" a:elif="{{idx === 1}}" src="../../assets/yinpai.svg" />
+    <image class="item-img" a:elif="{{idx === 2}}" src="../../assets/tongpai.svg" />
+    <image class="item-img" a:else src="../../assets/jiangzhangxunzhang.svg" />
+    <text class="item-text">No.{{idx + 1}}</text>
+  </view>
+  <view class="item-right-text-con">
+    <image class="item-img" src="../../assets/shijian.svg" />
+    <text class="item-text">{{time}}</text>
+  </view>
+</view>
+<view  class="line">
+</view>
+</view>
+<view class='detail-page-con'>
+  <view class='detail-container' ref='saveChildRef0'>
+    <ec-canvas id='mychart-dom-bar' canvas-id='mychart-bar' ec="{{ ec }}">
+    </ec-canvas>
+  </view>
+</view>
+<view class='detail-page-con'>
+  <view class='detail-container' ref='saveChildRef00'>
+    <ec-canvas id='mychart-dom-bars' canvas-id='mychart-bars' ec="{{ ec2 }}">
+    </ec-canvas>
+  </view>
+</view>

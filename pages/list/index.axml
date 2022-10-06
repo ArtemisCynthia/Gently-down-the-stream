@@ -1,0 +1,78 @@
+<tabs index="{{index}}" onChange="handleChange" sticky animation swipeable>
+  <tab-content tab="{{title:'周榜'}}">
+   <scroll-view scroll-y="{{true}}">
+    <view a:for="{{zdata}}" a:for-index="zidx" class="item-all" data-item="{{item}}" data-idx="{{zidx}}" onTap="gotodetail">
+      <view class="item-left">
+        <image src="../../assets/head.png" class="amd-avatar-src"/>
+      </view>
+      <view class="item-right">
+        <text class="item-name">{{item.username}}</text>
+        <view class="item-right-text-con">
+          <image class="item-img" a:if="{{zidx === 0}}" src="../../assets/jiangzhangxunzhang.svg" />
+          <image class="item-img" a:elif="{{zidx === 1}}" src="../../assets/yinpai.svg" />
+          <image class="item-img" a:elif="{{zidx === 2}}" src="../../assets/tongpai.svg" />
+          <image class="item-img" a:else src="../../assets/xingxing.svg" />
+          <text class="item-text">No.{{zidx + 1}}</text>
+        </view>
+        <view class="item-right-text-con">
+          <image class="item-img" src="../../assets/shijian.svg" />
+          <text class="item-text">{{item.time}}</text>
+        </view>
+      </view>
+      <view a:if="{{zidx !== zdata.length - 1}}" class="line">
+      </view>
+    </view>
+   </scroll-view>
+  </tab-content>
+  <tab-content tab="{{title:'月榜'}}">
+    <scroll-view scroll-y="{{true}}">
+      <view a:for="{{ydata}}" a:for-index="yidx" class="item-all" data-item="{{item}}" data-idx="{{yidx}}" onTap="gotodetail">
+        <view class="item-left">
+          <avatar/>
+        </view>
+        <view class="item-right">
+          <text class="item-name">{{item.username}}</text>
+          <view class="item-right-text-con">
+            <image class="item-img" a:if="{{yidx === 0}}" src="../../assets/jiangzhangxunzhang.svg" />
+            <image class="item-img" a:elif="{{yidx === 1}}" src="../../assets/yinpai.svg" />
+            <image class="item-img" a:elif="{{yidx === 2}}" src="../../assets/tongpai.svg" />
+            <image class="item-img" a:else src="../../assets/xingxing.svg" />
+            <text class="item-text">No.{{yidx + 1}}</text>
+          </view>
+          <view class="item-right-text-con">
+            <image class="item-img" src="../../assets/shijian.svg" />
+            <text class="item-text">{{item.time}}</text>
+          </view>
+        </view>
+        <view a:if="{{yidx !== zdata.length - 1}}" class="line">
+        </view>
+      </view>
+     </scroll-view>
+  </tab-content>
+
+  <tab-content tab="{{title:'总榜'}}">
+    <scroll-view scroll-y="{{true}}">
+      <view a:for="{{tdata}}" a:for-index="tidx" class="item-all" data-item="{{item}}" data-idx="{{tidx}}" onTap="gotodetail">
+        <view class="item-left">
+          <avatar/>
+        </view>
+        <view class="item-right">
+          <text class="item-name">{{item.username}}</text>
+          <view class="item-right-text-con">
+            <image class="item-img" a:if="{{tidx === 0}}" src="../../assets/jiangzhangxunzhang.svg" />
+            <image class="item-img" a:elif="{{tidx === 1}}" src="../../assets/yinpai.svg" />
+            <image class="item-img" a:elif="{{tidx === 2}}" src="../../assets/tongpai.svg" />
+            <image class="item-img" a:else src="../../assets/xingxing.svg" />
+            <text class="item-text">No.{{tidx + 1}}</text>
+          </view>
+          <view class="item-right-text-con">
+            <image class="item-img" src="../../assets/shijian.svg" />
+            <text class="item-text">{{item.time}}</text>
+          </view>
+        </view>
+        <view a:if="{{tidx !== zdata.length - 1}}" class="line">
+        </view>
+      </view>
+     </scroll-view>
+  </tab-content>
+</tabs>

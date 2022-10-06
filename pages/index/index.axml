@@ -1,0 +1,21 @@
+
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="all-con">
+      <view class="title"> 
+        <text>开卷-时间记录系统</text>
+      </view>
+    <view>
+      <input class="input" name="username" placeholder="用户名" onFocus="onfocus"/>
+    </view>
+    <view>
+      <input class="input" name="password" password placeholder="密码" />
+    </view>
+    <view class="button-con">
+      <button class="button" type="primary" form-type="submit">登录</button>
+      <button class="button" type="ghost" onTap="goToSigin">注册</button>
+    </view>
+  </view>
+</form>
+
+
+

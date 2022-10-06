@@ -1,0 +1,81 @@
+<!-- 
+ * qiun-data-charts 秋云高性能跨全端图表组件
+ * Copyright (c) 2021 QIUN® 秋云 https://www.ucharts.cn All rights reserved.
+ * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+ * 复制使用请保留本段注释，感谢支持开源！
+ * 为方便更多开发者使用，如有更好的建议请提交码云 Pull Requests ！
+ *
+ * uCharts®官方网站
+ * https://www.uCharts.cn
+ * 
+ * 开源地址:
+ * https://gitee.com/uCharts/uCharts
+ * 
+ * uni-app插件市场地址：
+ * http://ext.dcloud.net.cn/plugin?id=271
+ * 
+ -->
+<view class="charts" id="boxid{{cid}}">
+  <view a:if="{{mixinDatacomLoading}}">
+    <!-- 自定义加载状态，请改这里 -->
+    <qiun-loading loadingType="{{loadingType}}" />
+  </view>
+  <view a:if="{{mixinDatacomErrorMessage && errorShow}}" bindtap="reloading">
+    <!-- 自定义错误提示，请改这里 -->
+    <qiun-error errorMessage="{{errorMessage}}" />
+  </view> 
+  <view a:if="{{type2d == true}}">
+    <view a:if="{{ontouch == true}}" onTap="_tap">
+      <canvas
+        id="{{cid}}"
+        canvas-id="{{cid}}"
+        type="2d"
+        disable-scroll="{{disableScroll}}"
+        class="charts"
+        onTouchStart="_touchStart"
+        onTouchMove="_touchMove"
+        onTouchEnd="_touchEnd"
+        a:if="{{showchart == true}}"
+      />
+    </view>
+    <view a:if="{{ontouch == false}}" onTap="_tap">
+      <canvas
+        id="{{cid}}"
+        canvas-id="{{cid}}"
+        type="2d"
+        disable-scroll="{{disableScroll}}"
+        class="charts"
+        onTap="_tap"
+        a:if="{{showchart == true}}"
+      />
+    </view>
+  </view>
+  <view a:if="{{type2d == false}}">
+    <view a:if="{{ontouch == true}}" onTap="_tap">
+      <canvas
+        id="{{cid}}"
+        canvas-id="{{cid}}"
+        width="{{cWidth * _pixel}}"
+        height="{{cHeight * _pixel}}"
+        class="charts"
+        onTouchStart="_touchStart"
+        onTouchMove="_touchMove"
+        onTouchEnd="_touchEnd"
+        disable-scroll="{{disableScroll}}"
+        a:if="{{showchart == true}}"
+      />
+    </view>
+    <view a:if="{{ontouch == false}}" onTap="_tap">
+      <canvas
+        id="{{cid}}"
+        canvas-id="{{cid}}"
+        width="{{cWidth * _pixel}}"
+        height="{{cHeight * _pixel}}"
+        class="charts"
+        disable-scroll="{{disableScroll}}"
+        onTap="_tap"
+        a:if="{{showchart == true}}"
+      />
+    </view>
+  </view>
+</view>

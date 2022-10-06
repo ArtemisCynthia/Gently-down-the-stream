@@ -1,0 +1,86 @@
+page {
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 24rpx;
+  padding: 32rpx;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.dial {
+  width: 600rpx;
+  height: 600rpx;
+  margin-top: 50rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 50%;
+  border: #BBBBBB solid 30rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 600rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 70rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.start {
+  padding: 100rpx;
+}
+
+.start_button {
+  width: 160rpx;
+  border-radius: 10%;
+}
+
+.wait_button {
+  color: #49A9EE;
+  width: 160rpx;
+  border-radius: 10%;
+  background-color: #FFFFFF;
+  border: 2rpx #49A9EE solid;
+}
+
+.next_button {
+  color: #49A9EE;
+  width: 160rpx;
+  border-radius: 10%;
+  background-color: #FFFFFF;
+  border: 2rpx #49A9EE solid;
+}
+
+.stop {
+  padding: 100rpx;
+}
+
+.stop_button {
+  width: 160rpx;
+  border-radius: 10%;
+}

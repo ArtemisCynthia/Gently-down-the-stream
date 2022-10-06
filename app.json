@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/list/index",
+    "pages/login/login",
+    "pages/detail/index",
+    "pages/signin/signin"
+    
+  ],
+  "window": {
+    "defaultTitle": "开卷",
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "textColor": "#DDDDDD",
+    "selectedColor": "#49A9EE",
+    "backgroundColor": "#FFFFFF",
+    "items": [
+      {
+        "pagePath": "pages/home/home",
+        "icon": "images/tabBars/icon_home.png",
+        "activeIcon": "images/tabBars/icon_home_HL.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "icon": "images/tabBars/icon_ranking.png",
+        "activeIcon": "images/tabBars/icon_ranking_HL.png",
+        "name": "排行"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "icon": "images/tabBars/icon_site.png",
+        "activeIcon": "images/tabBars/icon_site_HL.png",
+        "name": "设置"
+      }
+    ]
+  }
+}

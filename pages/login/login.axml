@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="user">
+    <view>
+      <image class="avatar" src="{{avatar}}" />
+    </view>
+    <view class="username">
+      <text>{{username}}</text>
+    </view>
+    <view class="buttons">
+      <block>
+        <button class="button" size="default" type="primary" onTap="clear">退出</button>
+      </block>
+    </view>
+  </view>
+</view>

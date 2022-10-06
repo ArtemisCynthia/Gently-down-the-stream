@@ -1,0 +1,53 @@
+page {
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24rpx;
+  padding: 32rpx;
+  flex: 1;
+}
+
+.page-title {
+  margin-bottom: 32rpx;
+  font-size: 40rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.page-form {
+  text-align: center;
+}
+
+.input {
+  height: 60rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #CCCCCC;
+  margin: 10rpx;
+  padding: 0 20rpx;
+  text-align: left;
+}
+
+.button {
+  margin: 10rpx;
+}
+
+.blue {
+  height: 60rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #49A9EE;
+  margin: 10rpx;
+  padding: 0 20rpx;
+  text-align: left;
+}
+
+.red {
+  height: 60rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid red;
+  margin: 10rpx;
+  padding: 0 20rpx;
+  text-align: left;
+}

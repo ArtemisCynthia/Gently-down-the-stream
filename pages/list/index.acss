@@ -1,0 +1,61 @@
+.item-all{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height:200rpx ;
+}
+.item-left{
+  display: flex;
+  height: 170rpx;
+  width: 170rpx;
+  margin-left: 41rpx;
+  margin-right: 18rpx;
+  justify-content: center;
+  align-items: center;
+}
+.item-right{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50rpx;
+  height: 170rpx;
+  width: 170rpx;
+}
+
+.amd-avatar-src{
+  display: block;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.line-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  margin-left: 7.5%;
+  width: 80%;
+  border-top: 1rpx solid black;
+}
+.item-name{
+  margin-top: 11rpx;
+  color: red;
+  font-size: 40rpx;
+  text-align: left;
+ 
+}
+.item-img{
+  height: 35rpx;
+  width: 35rpx;
+  margin-right: 30rpx;
+}
+.item-text{
+  font-size: 25rpx;
+}
+.item-right-text-con{
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
